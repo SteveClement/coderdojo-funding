@@ -1,0 +1,58 @@
+\documentclass[DIN, pagenumber=false, parskip=half,%
+               fromalign=right, 
+               fromrule=false,fromlogo]{scrlttr2}
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}% Latin Modern typeface (font)
+\RequirePackage{graphicx}
+
+\renewcommand{\familydefault}{\sfdefault} % Latin Modern's sans serif font family as default
+
+% if you have a word with just uppercase letter you should use the package soul
+% for better readability
+\usepackage{soul}
+\sodef\so{}{.14em}{.4em plus.1em minus .1em}{.4em plus.1em minus .1em}
+
+ 
+ % do not indent the signature
+\renewcommand*{\raggedsignature}{\raggedright} 
+
+ % the sender:
+\setkomavar{fromname}{Steve Clement}
+\setkomavar{fromaddress}{87 route de Thionville \\ L-2611, Luxembourg \\ c/o: Level2 HackerSpace}
+\setkomavar{signature}{Steve Clement \\ CoderDojo Luxembourg Champion}
+\setkomavar{fromlogo}{\includegraphics[height=5\baselineskip]{logo}}
+
+ 
+\begin{document}
+ 
+% the receiver:
+\begin{letter}{\so{Destination} Company \\ 123 Fake Street \\ L-1234, Luxembourg}
+
+
+%===================================
+\opening{Dear,}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tem 
+invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+et justo duo dolores et ea rebum. 
+
+Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tem invidunt ut 
+labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+dolores et ea rebum. 
+
+\closing{Sincerely yours,}
+
+
+%===================================
+\setkomavar*{enclseparator}{Attached} 
+\encl{Proposal detail}
+
+
+\end{letter}
+ 
+\end{document}
