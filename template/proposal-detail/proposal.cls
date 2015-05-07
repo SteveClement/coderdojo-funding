@@ -1,4 +1,5 @@
-\ProvidesClass{application}[2014/03/04 v1.0 Simple application class]
+% LaTeX class initially based on an mobile-application proposal
+\ProvidesClass{proposal}[2015/05/06 v1.0 Simple proposal class]
 \LoadClass{article}
 
 \RequirePackage[T1]{fontenc}
@@ -10,11 +11,11 @@
 
 \usepackage[english]{babel} 
 \RequirePackage{listings}
-\lstset{language=java}
+%\lstset{language=java}
 
 \RequirePackage[margin=2cm,a4paper]{geometry}
-
 \RequirePackage{graphicx}
+
 \graphicspath{{./}{../}{images/}}
 
 \RequirePackage[pdftex,
@@ -29,7 +30,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{5pt}
 
-\newcommand{\titleabstand}{\hspace{3cm}}
+\newcommand{\titlespacing}{\hspace{3cm}}
 
 \renewcommand{\maketitle}{
 \begin{titlepage}
@@ -73,7 +74,7 @@
 \begin{flushright}
 Steve Clement\\
 steve@localhost.lu\\
-@SteveClement\\ 
+\includegraphics[scale=0.15]{twitter}@SteveClement\\ 
 
 \end{flushright}
 
