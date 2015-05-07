@@ -13,6 +13,7 @@
 \usepackage{wrapfig}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{pgfgantt}
 
 % \begin{comment} ... \end{comment{}
 \usepackage{verbatim}
@@ -27,17 +28,17 @@
       }
       \makeatother
 
-
 \begin{document}
 
+% The following gets pulled from the class file
+% Page 1
 \newpage
 
 \maketitle
 
 \newpage
 
-
-%=================
+% Page 2
 \section*{Who are we?}
 
 Coder Dojo is an International movement of technology enthusiasts who believe that there are many ways of engaging youth with Technologies by taking a very practical, hands-on approach.
@@ -58,6 +59,10 @@ Being based at Level2 has the advantage disposing of an amazing infrastructure w
 
 The mode of operation is to stimulate the kids creativity in a natural way by letting them fail at first, encourage them to find a solution, talk to the other Dojo members to see if there is a peer who can help and finally mentor them into the right direction once the group (or Google) hasn't found the path.
 
+% Include visual examples of Projects
+% Flappy JS, Zombie Conga, Minecraft Py, 
+\subsection*{Our current languages taught by mentors}
+
 \begin{figure}[h]
         \centering
                 \centering
@@ -66,25 +71,41 @@ The mode of operation is to stimulate the kids creativity in a natural way by le
                 \label{fig:gull}
 \end{figure}
 
-% Include visual examples of Projects
-% Flappy JS, Zombie Conga, Minecraft Py, 
-\subsection*{Our current content}
-\begin{figure}[h]
-        \centering
-                \centering
-	  \includegraphics[scale=0.8]{images/LanguagesUsed}
-                \caption{Programming Languages Used}
-                \label{fig:gull}
-\end{figure}
+\paragraph{Technologies}
+We initiate everyone to the concept of versioning by creating Github \footnote{\url{http://www.github.com}} accounts to keep track of their changes and have a better understanding how their code and the code of their peers has evolved.
+% Added Lic. Chooser
+\paragraph{License}
+Every line of code that is being produced by the Kids will be owned by them, or their legal representative and we encourage them to License their code under any Open Source License \footnote{\url{http://www.licensechooser.lu}} to make the code shareable and re-useable.
+ 
+\paragraph{Roadmap}
+In the following months we will use the raised funds to enable an individual to be a part-time employee at the heart of the CoderDojo Luxembourg efforts.
+This person will be in charge of creating innovative code content and taking the lead in the weekly CoderDojo's this enabling us to provide a bi-weekly Dojo to accommodate our constantly growing waiting-list.
+
+% Placeholder, replace with GANTT
+\begin{ganttchart}[
+vgrid,
+progress=today,
+progress label text=\relax,
+today=12
+]{1}{24}
+\gantttitlecalendar{day} \\[grid]
+%\ganttfoobar{Foobar 1}{1}{2} \\
+%\ganttfoobar{Foobar 2}{3}{7} \\
+%\ganttlinkedfoobar{Foobar 3}{9}{12}
+\end{ganttchart}
 
 
+\newpage
+
+% Page 3
 \subsection*{Your advantage}
 Depending on the chosen sponsorship Level you help us create a viable future for our efforts and whilst everyone agrees it's important to invest into our Future, actually being a real part in this premise.
 
 Further-on this will play an integral part in the economic future of the upcoming work force. Again everyone agrees we need more people going into the technology sector, yet, no real efforts are being made to make this come true.
 
-We will strongly involve you and your company into our efforts giving you media exposure, including you in our tutorial examples, having you CI in our mobile apps and why not give people at your company the opportunity to volunteer for the Dojo.
+We will strongly involve you and your company in our efforts giving you ultimate media exposure, including you in our tutorial examples, having your CI in our mobile apps and why not give people at your company the opportunity to volunteer for the Dojo to experience the immense joy of sharing knowledge themselves.
 
+% Show wort example, splash screen for mobile app
 \begin{figure}[h]
         \centering
         \begin{subfigure}[b]{0.5\textwidth}
@@ -113,12 +134,13 @@ voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
 clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
 amet.
 
-
-%=================
 \section*{CSR}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-voluptua. 
+The more cynical among us might deem CSR as a fancy word for giving back to our society. At CoderDojo we believe that CSR is already an integral part of any successful venture and not only gives to the community being sponsored but also fosters a strong bond within the different teams who are eventually involved in helping the community out.
+Further on can CSR help illustrate the real reasons a company adheres to a country and it's current economic model. We would be glad to provide any written statements on the strong partnerships we will forge during our common efforts.
+
+\newpage
+
+% Page 4
 
 \paragraph{Foo}
 \begin{figure}[h]
@@ -154,29 +176,12 @@ voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
 clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
 amet.
 
-\paragraph{Technologies}
-We initiate everyone to the concept of versioning by creating Github \footnote{\url{http://www.github.com}} accounts to keep track of their changes and have a better understanding how their code and the code of their peers has evolved.
-
-
-% Added Lic. Chooser
-\paragraph{License}
-Every line of code that is being produced by the Kids will be owned by them, or their legal representative and we encourage them to License their code under any Open Source License \footnote{\url{http://www.licensechooser.lu}} to make the code shareable and reuseable.
- 
-
-\paragraph{Roadmap}
-In the following months we will use the raised funds to 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-amet.
 
 
 %=================
 \section*{Packages}
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt.
+The following sponsorship packages are at your disposal and are not set in stone but can be nogotiated on per-need basis and are structured in a crowd-fund matter.
 
 \paragraph{Micro}
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
@@ -184,15 +189,24 @@ eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 voluptua. At vero eos et accusam et justo.
 
 \paragraph{Small}
+All of the above plus\ldots
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 voluptua. At vero eos et accusam et justo.
 
 \paragraph{Large}
+All of the above plus\ldots
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
 voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
 clita kasd gubergren, no sea takimata sanctus est.
+\paragraph{Corporate}
+All of the above plus\ldots
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+clita kasd gubergren, no sea takimata sanctus est.
+
 \ \\
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy

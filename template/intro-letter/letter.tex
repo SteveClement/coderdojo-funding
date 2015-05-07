@@ -1,8 +1,5 @@
-\documentclass[DIN, pagenumber=false, parskip=half,%
-               fromalign=right, 
-               fromrule=false,fromlogo]{scrlttr2}
+\documentclass[DIN, pagenumber=false, parskip=half, fromalign=right, fromrule=false,fromlogo]{scrlttr2}
 
-\usepackage{ngerman}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
@@ -15,7 +12,6 @@
 % for better readability
 \usepackage{soul}
 \sodef\so{}{.14em}{.4em plus.1em minus .1em}{.4em plus.1em minus .1em}
-
  
  % do not indent the signature
 \renewcommand*{\raggedsignature}{\raggedright} 
@@ -32,9 +28,8 @@
 % the receiver:
 \begin{letter}{\so{Destination} Company \\ 123 Fake Street \\ L-1234, Luxembourg}
 
-
 %===================================
-\opening{Dear,}
+\opening{Dear \#PERSONALIZATION\_HERE,}
 
 CoderDojo Luxembourg is a CodeClub Luxembourg project driven by volunteers to teach coding and technologies to youngsters aged 9 to 18.
 
@@ -50,12 +45,8 @@ Attached you will find our proposal where you can actively take part in realisin
 
 \closing{Sincerely yours,}
 
-
 %===================================
 \setkomavar*{enclseparator}{Attached} 
 \encl{Proposal detail}
-
-
 \end{letter}
- 
 \end{document}
